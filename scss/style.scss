@@ -78,7 +78,7 @@ footer {
     .footer-row{
         text-align: center;
     }
-    .footer-links{
+    .nav-links{
         width: 100%;
         margin-bottom: 30px;
     }
@@ -109,6 +109,15 @@ footer {
 .header2 .nav-a{
     font-size: 500;
     display: inline-block;
+}
+@media(max-width:991px){
+    .header2{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
     .headerTitle {
