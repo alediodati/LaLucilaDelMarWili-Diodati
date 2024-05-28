@@ -84,7 +84,7 @@ footer {
   .footer-row {
     text-align: center;
   }
-  .nav-links {
+  .footer-links {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -122,9 +122,9 @@ footer {
   .header2 {
     text-align: center;
   }
-  .footer-links {
+  .nav-links {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 .headerTitle {
