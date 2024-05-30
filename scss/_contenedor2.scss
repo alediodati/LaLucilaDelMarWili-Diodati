@@ -1,0 +1,117 @@
+.contenedor2 { 
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "inmobiliaria1 seccion1 articulo1"
+      "inmobiliaria2 seccion2 articulo2"
+      "inmobiliaria3 seccion3 articulo3"
+      "footer footer footer";
+      ul{list-style: none;}
+  }
+  
+  .header { grid-area: header;
+  padding: 10px; }
+  
+  .inmobiliaria1 { grid-area: inmobiliaria1;
+  img{ border-radius: 5px;}
+  h5{text-align: center;
+  padding:5px;} 
+
+}
+
+  
+  .inmobiliaria2 { grid-area: inmobiliaria2;
+  img{border-radius: 5px;
+      display: flex;
+      align-items: center;}
+  h5{ text-align: center;
+  padding: 5px;}
+}
+  
+  .inmobiliaria3 { grid-area: inmobiliaria3; 
+  padding: 5px;
+  img{border-radius: 5px;}
+  h5{text-align: center;
+  padding: 5px;}}
+  
+  .seccion1 { grid-area: seccion1;
+  background-color:  $colorCards;
+  border-radius: 5px;
+  padding: 5px;}
+  
+  .seccion2 { grid-area: seccion2;
+  background-color:  $colorCards;
+  border-radius: 5px;
+  padding: 5px;
+ }
+  
+  .seccion3 { grid-area: seccion3;
+  background-color:  $colorCards;
+  border-radius: 5px;
+  padding: 5px; }
+  
+  .articulo1 { grid-area: articulo1;
+  padding: 5px;
+  img{border-radius: 5px;}
+}
+  
+  
+  .articulo2 { grid-area: articulo2;
+  padding: 5px;
+  img{border-radius: 5px;}}
+  
+  
+  .articulo3 { grid-area: articulo3;
+  padding: 5px;
+  img{border-radius: 5px;} }
+  
+  .footer { grid-area: footer; }
+
+  @media screen and (max-width:768px){
+    .contenedor2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1f;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header"
+        "inmobiliaria1" 
+        "seccion1" 
+        "articulo1"
+        "inmobiliaria2 "
+        "seccion2" 
+        "articulo2"
+        "inmobiliaria3"
+        "seccion3"
+        "articulo3"
+        "footer";
+    } 
+  }
+
+  @media screen and (max-width:420px){
+    .contenedor2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1f;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header"
+        "inmobiliaria1" 
+        "seccion1" 
+        "articulo1"
+        "inmobiliaria2 "
+        "seccion2" 
+        "articulo2"
+        "inmobiliaria3"
+        "seccion3"
+        "articulo3"
+        "footer";
+    } 
+  }
