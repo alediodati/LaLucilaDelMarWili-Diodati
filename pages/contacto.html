@@ -30,34 +30,61 @@
   <body>
     <header>
       <div>
-        <nav class="header2">
-          <div class="logo">
-            <img src="../imagenes/la lucila logo.png" alt="logo de la lucila" />
+        <nav class="navbar navbar-expand-lg rounded mx-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                class="img-navbar"
+                src="../imagenes/la lucila logo.png"
+                alt="logo de la pagina"
+                width="50px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/conocelalucila.html"
+                    >Conoce La Lucila</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/hoteles.html">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/inmobiliarias.html"
+                    >Inmobiliarias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/actividades.html"
+                    >Actividades</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="nav-links">
-            <li>
-              <a class="item" href="../index.html">Inicio</a>
-            </li>
-            <li>
-              <a class="item" href="../pages/conocelalucila.html"
-                >Conoce La Lucila</a
-              >
-            </li>
-            <li>
-              <a class="item" href="../pages/hoteles.html">Hoteles</a>
-            </li>
-            <li>
-              <a class="item" href="../pages/inmobiliarias.html"
-                >Inmobiliarias</a
-              >
-            </li>
-            <li>
-              <a class="item" href="../pages/actividades.html">Actividades</a>
-            </li>
-            <li>
-              <a class="item" href="../pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
         </nav>
       </div>
       <h1>Contacto</h1>
@@ -93,8 +120,8 @@
           <textarea></textarea>
         </div>
         <div>
-          <button type="submit">Enviar</button>
-          <button type="reset">Reset</button>
+          <button type="submit" class="btn btn-secondary mt-2">Enviar</button>
+          <button type="reset" class="btn btn-secondary mt-2">Reset</button>
         </div>
       </form>
     </main>
@@ -129,8 +156,10 @@
         <div class="footer-links">
           <h4>Enterate de las novedades</h4>
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="agus@.com" />
-          <button type="submit">Suscribirme</button>
+          <input type="email" id="email" placeholder="ejemplo@.com" />
+          <button type="submit" class="btn btn-secondary mt-2">
+            Suscribirme
+          </button>
         </div>
       </div>
     </div>

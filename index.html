@@ -33,32 +33,62 @@
   </head>
   <body>
     <header>
-      <nav class="header2">
-        <div class="logo">
-          <img src="./imagenes/la lucila logo.png" alt="logo de la lucila" />
+      <!-- nav importada desde bootstrap -->
+      <nav class="navbar navbar-expand-lg rounded mx-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              class="img-navbar"
+              src="./imagenes/la lucila logo.png"
+              alt="logo de la pagina"
+              width="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/conocelalucila.html"
+                  >Conoce La Lucila</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/hoteles.html">Hoteles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/inmobiliarias.html"
+                  >Inmobiliarias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/actividades.html"
+                  >Actividades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li>
-            <a class="item" href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="item" href="./pages/conocelalucila.html"
-              >Conoce La Lucila</a
-            >
-          </li>
-          <li>
-            <a class="item" href="./pages/hoteles.html">Hoteles</a>
-          </li>
-          <li>
-            <a class="item" href="./pages/inmobiliarias.html">Inmobiliarias</a>
-          </li>
-          <li>
-            <a class="item" href="./pages/actividades.html">Actividades</a>
-          </li>
-          <li>
-            <a class="item" href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main id="main" class="mainTitle">
@@ -85,6 +115,7 @@
         perfecto para relajarse bajo el cálido sol y disfrutar de refrescantes
         baños en el océano Atlántico.
       </p>
+      <!-- carousel de bootstrap -->
       <div>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
@@ -92,35 +123,35 @@
               <img
                 src="./imagenes/carrusel1.jpg"
                 class="m-auto rounded d-block w-50"
-                alt="playa"
+                alt="imagen de la playa de la lucila del mar al atardecer"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./imagenes/carrusel2.jpg"
                 class="m-auto rounded d-block w-50"
-                alt="entrada"
+                alt="Imagen de la entrada de la lucila del mar2"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./imagenes/carrusel3.jpg"
                 class="m-auto rounded d-block w-50"
-                alt="costanera"
+                alt="Imagen de la calle que costea la playa de la lucila del mar"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./imagenes/carrusel4.jpg"
                 class="m-auto rounded d-block w-50"
-                alt="costanera"
+                alt="Imagen de la calle que costea la playa de la lucila del mar2"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./imagenes/carrusel5.jpg"
                 class="m-auto rounded d-block w-50"
-                alt="muelle"
+                alt="Muelle de la lucila del mar"
               />
             </div>
           </div>
@@ -180,7 +211,7 @@
       </p>
     </aside>
     <hr />
-
+    <!-- se inserta el footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
@@ -208,8 +239,10 @@
           <div class="footer-links">
             <h4>Enterate de las novedades</h4>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="agus@.com" />
-            <button type="submit">Suscribirme</button>
+            <input type="email" id="email" placeholder="ejemplo@.com" />
+            <button type="submit" class="btn btn-secondary mt-2">
+              Suscribirme
+            </button>
           </div>
         </div>
       </div>

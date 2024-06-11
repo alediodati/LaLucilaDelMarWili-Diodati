@@ -1,5 +1,7 @@
 $colorClaro:#e8cc97cb;
 $colorCards: #efc990;
+$colorNav:  rgba(241, 149, 10);
+$colorFooter: rgb(255,204,0);
 
 *{  margin: 0;
     padding: 0;
@@ -10,6 +12,10 @@ $colorCards: #efc990;
     font-style: normal;
     font-variation-settings: "slnt" 0;
     }
+.img-navbar{
+    width: 30%;
+    height: auto;
+}
     
 body {
         background-color: $colorClaro;
