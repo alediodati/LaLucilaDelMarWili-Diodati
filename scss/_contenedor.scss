@@ -1,24 +1,16 @@
 .contenedor { 
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
-    grid-template-areas:
-    "header header header"
-    "section1 section2 section3"
-    "article1 article2 article3"
-    "section4 section5 section6"
-    "article4 article5 article6"
-    "footer footer footer";
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    
     ul{
         list-style: none;
     }
 }
 
-.header { grid-area: header; }
+.header { grid-area: header;
+display: flex; }
 
 .section1 { grid-area: section1; 
 display: flex;
@@ -100,33 +92,12 @@ background-color:  $colorCards;
 border-radius: 5px;
 padding: 15px; }
 
-.footer { grid-area: footer;
-border-radius: 8px;
-padding: 3px; }
-
-    @media screen and (max-width:768px){
-      .contenedor { 
-    
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px 25px;
-        grid-template-areas:
-        "header header "
-        "section1 section2 "
-        "article1 article2 "
-        "section3 section4 "
-        "article3 article4 "
-        "section5 section6 "
-        "article5 article6 "
-        "footer footer " ;
-      }
-    }
 
     @media screen and (max-width:420px){
       .contenedor { 
     
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 10px 25px;
         grid-template-areas:
         "header "
@@ -142,6 +113,8 @@ padding: 3px; }
         "article5"
         "section6" 
         "article6"
-        "footer" ;
+        ;
       }
     }
+
+   
