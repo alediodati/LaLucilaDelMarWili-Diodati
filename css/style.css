@@ -378,4 +378,30 @@ a:hover {
   background-color: rgb(241, 149, 10);
 }
 
+.card {
+  background-color: #efc990;
+  margin-block: 30px;
+  width: 380px;
+  margin: 12px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+}
+
+.card-footer ul {
+  padding-left: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
