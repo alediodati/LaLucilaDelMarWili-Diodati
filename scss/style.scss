@@ -2,94 +2,37 @@ $colorClaro:#e8cc97cb;
 $colorCards: #efc990;
 $colorNav:  rgba(241, 149, 10);
 $colorFooter: rgb(255,204,0);
-
-*{  margin: 0;
+* {
+    margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings: "slnt" 0;
-    }
-.img-navbar{
-    width: 30%;
-    height: auto;
-}
-    
-body {
-        background-color: $colorClaro;
-        margin: 20px;
-        
-    }
-main{
-        margin: 10px;
-    }
-@import "footer";
-@import "nav";
-
-    .headerTitle {
-        text-align: center;
-    }
-    
-    .video {
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    }
-    h1{ text-align: center;
-    font-weight: bolder;
-    margin-block:20px;}
-
-    p{
-        line-height: 1.5;
-    }
-    .link{
-        text-decoration: none;
-    }
-    label{
-        display: block;
-    }
-    input{
-        display: block;
-        width: 100%;
-    }
-    textarea{
-        display: block;
-        width: 100%;
-    }
-    .video{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    h2{
-        font-weight: 600;
-    }
-
-    .item{
-        text-decoration: none;
-        color: black;
-        padding: 0.7rem;
-        display: flex;
-        font-weight: 550;
-        
-    }
-    .item:hover{
-        background-color: black;
-        color: orange;
-        border-radius: 10px;
-    
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-    a:hover{
-        border-radius: 10px;
-        color:crimson
-        
-    }
+    font-variation-settings: 'slnt' 0;
+  }
+  @import "footer";
+  @import "nav";
+  
+  body {
+    background-color: rgba(232, 204, 151, 0.7960784314);
+    margin: 20px;
+  }
+  
+  main {
+    margin: 10px;
+  }
+  
+// se importan las clases presentes en los html
+@import "clases";
 @import "contenedor";
-@import "contenedor2";
-        
+
+  /*# sourceMappingURL=style.css.map */
+  .navbar {
+    background-color: rgb(241, 149, 10);
+  }
+
+  // se importan las clases de las cards
+
+@import "card"

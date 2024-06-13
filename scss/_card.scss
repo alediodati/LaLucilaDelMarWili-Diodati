@@ -1,0 +1,25 @@
+
+.card{
+    background-color: $colorCards;
+    margin-block: 30px;
+    width: 380px;
+    margin: 12px;
+    
+    
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+  .card-img{
+    box-sizing: border-box;
+    width:100%
+  }
+  .img-container{
+    display: flex;
+  }
+  .card-footer ul{
+    padding-left: 0;
+  }

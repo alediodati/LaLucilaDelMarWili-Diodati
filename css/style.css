@@ -9,15 +9,6 @@
   font-variation-settings: "slnt" 0;
 }
 
-body {
-  background-color: rgba(232, 204, 151, 0.7960784314);
-  margin: 20px;
-}
-
-main {
-  margin: 10px;
-}
-
 footer {
   background-color: rgb(241, 149, 10);
   margin: 1rem;
@@ -89,7 +80,21 @@ footer {
     margin-bottom: 30px;
   }
 }
-.header2 {
+.listafooter {
+  text-decoration: none;
+  padding: 15px;
+  list-style: none;
+}
+
+.navcolor {
+  background-color: rgb(241, 149, 10);
+}
+
+.navbar {
+  background-color: rgb(241, 149, 10);
+}
+
+se comenta una clase que se dejo de usar por el momento .header2 {
   background-color: rgb(241, 149, 10);
   margin: 0 auto;
   border-radius: 10px;
@@ -122,13 +127,31 @@ footer {
   .header2 {
     text-align: center;
   }
+  .logo {
+    display: flex;
+    align-items: start;
+  }
   .nav-links {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-.headerTitle {
-  text-align: center;
+.logo img {
+  width: 60px;
+  padding: 3px;
+}
+
+.bg-warning {
+  color: rgb(241, 149, 10);
+}
+
+body {
+  background-color: rgba(232, 204, 151, 0.7960784314);
+  margin: 20px;
+}
+
+main {
+  margin: 10px;
 }
 
 .video {
@@ -141,12 +164,6 @@ h1 {
   text-align: center;
   font-weight: bolder;
   margin-block: 20px;
-}
-
-.listafooter {
-  text-decoration: none;
-  padding: 15px;
-  list-style: none;
 }
 
 p {
@@ -211,17 +228,30 @@ a:hover {
 }
 
 .contenedor {
-  width: 100vw;
-  height: 100vh;
+  padding-block: 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas: "header header header" "section1 section2 section3" "article1 article2 article3" "section4 section5 section6" "article4 article5 article6" "footer footer footer";
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "article1 article2 article3" "article4 article5 article6";
 }
 .contenedor ul {
   list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 25px;
+    grid-template-areas: "article1" "article2" "article3" "article4" "article5" "article6";
+  }
+}
+.grid-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
@@ -233,6 +263,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .section1 img {
   border: radius 5px;
@@ -244,6 +275,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .section2 img {
   border-radius: 5px;
@@ -254,6 +286,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .section3 img {
   border-radius: 5px;
@@ -285,6 +318,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .section4 img {
   border-radius: 5px;
@@ -295,6 +329,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .section5 img {
   border-radius: 5px;
@@ -305,6 +340,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .section6 img {
   border-radius: 5px;
@@ -337,147 +373,9 @@ a:hover {
   padding: 3px;
 }
 
-@media screen and (max-width: 768px) {
-  .contenedor {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 25px;
-    grid-template-areas: "header header " "section1 section2 " "article1 article2 " "section3 section4 " "article3 article4 " "section5 section6 " "article5 article6 " "footer footer ";
-  }
-}
-@media screen and (max-width: 420px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 25px;
-    grid-template-areas: "header " "section1" "article1" "section2" "article2" "section3" "article3" "section4" "article4" "section5" "article5" "section6" "article6" "footer";
-  }
-}
-.contenedor2 {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
-  gap: 8px 8px;
-  grid-auto-flow: row;
-  grid-template-areas: "header header header" "inmobiliaria1 seccion1 articulo1" "inmobiliaria2 seccion2 articulo2" "inmobiliaria3 seccion3 articulo3" "footer footer footer";
-}
-.contenedor2 ul {
-  list-style: none;
-}
 
-.header {
-  grid-area: header;
-  padding: 10px;
-}
-
-.inmobiliaria1 {
-  grid-area: inmobiliaria1;
-}
-.inmobiliaria1 img {
-  border-radius: 5px;
-}
-.inmobiliaria1 h5 {
-  text-align: center;
-  padding: 5px;
-}
-
-.inmobiliaria2 {
-  grid-area: inmobiliaria2;
-}
-.inmobiliaria2 img {
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.inmobiliaria2 h5 {
-  text-align: center;
-  padding: 5px;
-}
-
-.inmobiliaria3 {
-  grid-area: inmobiliaria3;
-  padding: 5px;
-}
-.inmobiliaria3 img {
-  border-radius: 5px;
-}
-.inmobiliaria3 h5 {
-  text-align: center;
-  padding: 5px;
-}
-
-.seccion1 {
-  grid-area: seccion1;
-  background-color: #efc990;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.seccion2 {
-  grid-area: seccion2;
-  background-color: #efc990;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.seccion3 {
-  grid-area: seccion3;
-  background-color: #efc990;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.articulo1 {
-  grid-area: articulo1;
-  padding: 5px;
-}
-.articulo1 img {
-  border-radius: 5px;
-}
-
-.articulo2 {
-  grid-area: articulo2;
-  padding: 5px;
-}
-.articulo2 img {
-  border-radius: 5px;
-}
-
-.articulo3 {
-  grid-area: articulo3;
-  padding: 5px;
-}
-.articulo3 img {
-  border-radius: 5px;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1f;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "header" "inmobiliaria1" "seccion1" "articulo1" "inmobiliaria2 " "seccion2" "articulo2" "inmobiliaria3" "seccion3" "articulo3" "footer";
-  }
-}
-@media screen and (max-width: 420px) {
-  .contenedor2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1f;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "header" "inmobiliaria1" "seccion1" "articulo1" "inmobiliaria2 " "seccion2" "articulo2" "inmobiliaria3" "seccion3" "articulo3" "footer";
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
 .navbar {
   background-color: rgb(241, 149, 10);
 }
+
+/*# sourceMappingURL=style.css.map */
